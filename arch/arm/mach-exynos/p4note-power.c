@@ -406,7 +406,11 @@ static struct regulator_consumer_supply max77686_enp32khz[] = {
 		.consumer_supplies = &_ldo##_supply[0],			\
 	};
 
+#if defined(CONFIG_QC_MODEM)
 REGULATOR_INIT(ldo3, "VCC_1.8V_AP", 1800000, 1800000, 1, 0, 0);
+#else
+REGULATOR_INIT(ldo3, "VCC_1.8V_AP", 1900000, 1900000, 1, 0, 0);
+#endif
 REGULATOR_INIT(ldo5, "VCC_1.8V_IO", 1800000, 1800000, 0,
 	       REGULATOR_CHANGE_STATUS, 1);
 REGULATOR_INIT(ldo8, "VMIPI_1.0V", 1000000, 1000000, 1,

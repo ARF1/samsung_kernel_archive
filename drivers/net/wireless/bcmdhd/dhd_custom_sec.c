@@ -86,6 +86,7 @@ const struct cntry_locales_custom translate_custom_table[] = {
 	{"LV", "LV", 1},
 	{"MT", "MT", 1},
 	{"NL", "NL", 1},
+	{"NE", "AD", 0},
 	{"NO", "NO", 1},
 	{"PL", "PL", 1},
 	{"PT", "PT", 1},
@@ -96,6 +97,7 @@ const struct cntry_locales_custom translate_custom_table[] = {
 	{"SI", "SI", 1},
 	{"SK", "SK", 1},
 	{"TW", "TW", 2},
+	{"ZM", "AE", 1},
 #ifdef BCM4330_CHIP
 	{"",   "XZ", 1},	/* Universal if Country code is unknown or empty */
 	{"IR", "XZ", 1},	/* Universal if Country code is IRAN, (ISLAMIC REPUBLIC OF) */
